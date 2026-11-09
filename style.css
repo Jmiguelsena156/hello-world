@@ -1,0 +1,45 @@
+body {
+    animation: colorido 3s linear 1s infinite;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body > * {
+    animation: girar 1s linear 1s infinite;
+    width: fit-content;
+}
+
+@keyframes colorido {
+    0% {
+        background-color: red;
+    }
+
+    33% {
+        background-color: green;
+    }
+
+    66% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
