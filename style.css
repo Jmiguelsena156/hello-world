@@ -1,5 +1,5 @@
 body {
-    animation: colorido 3s linear 1s infinite;
+    color: black;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -8,38 +8,39 @@ body {
 }
 
 body > * {
-    animation: girar 1s linear 1s infinite;
+    animation: colorido 3s linear 1s infinite;
+    animation: pular 1s linear 1s infinite;
     width: fit-content;
 }
 
 @keyframes colorido {
     0% {
-        background-color: darkred;
+        color: darkred;
     }
 
     33% {
-        background-color: darkgreen;
+        color: darkgreen;
     }
 
     66% {
-        background-color: darkblue;
+        color: darkblue;
     }
 
     100% {
-        background-color: darkred;
+        color: darkred;
     }
 }
 
-@keyframes girar {
+@keyframes pular {
     0% {
-        transform: rotate(0deg);
+        transform: translateY(0);
     }
 
     50% {
-        transform: rotate(180deg);
+        transform: translateY(20);
     }
 
     100% {
-        transform: rotate(360deg);
+        transform: translateY(0);
     }
 }
