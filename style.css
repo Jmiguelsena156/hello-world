@@ -14,19 +14,19 @@ body > * {
 
 @keyframes colorido {
     0% {
-        background-color: red;
+        background-color: darkred;
     }
 
     33% {
-        background-color: green;
+        background-color: darkgreen;
     }
 
     66% {
-        background-color: blue;
+        background-color: darkblue;
     }
 
     100% {
-        background-color: red;
+        background-color: darkred;
     }
 }
 
